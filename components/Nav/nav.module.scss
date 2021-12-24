@@ -1,0 +1,30 @@
+.nav {
+  .navContact {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  div {
+    padding: 0 5rem;
+  }
+
+  .navLinks {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    li {
+      padding: 0 0.5rem;
+      font-size: 14px;
+      font-family: "RalewayMedium";
+      font-weight: 700;
+      color: #bb0000;
+      &:hover {
+        color: #006600;
+      }
+    }
+  }
+}
