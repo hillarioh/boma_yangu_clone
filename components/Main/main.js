@@ -38,26 +38,43 @@ function Main() {
         <div className={styles.how}>How Does it works?</div>
         <div className={styles.step}>
           <div className={styles.stepTitle}>
-            <span>1</span>
+            <div>
+              <span>1</span>
+            </div>
           </div>
           <div className={styles.stepBody}>
-            <FontAwesomeIcon icon={faUniversalAccess} />
-            <p>Register</p>
-            <p>To register for house allocation, you MUST:</p>
-            <div>
-              <div>
-                <span>1</span>
-                <span>be a Kenyan citizen</span>
-              </div>
-              <div>
-                <span>2</span>
-                <span>be over 18 years of age</span>
-              </div>
-              <div>
-                <span>3</span>
-                <span>have a valid national identity card</span>
-              </div>
+            <div className={styles.title}>
+              <FontAwesomeIcon
+                icon={faUniversalAccess}
+                className={styles.icon}
+              />
+              <h4>Register</h4>
             </div>
+            <p>To register for house allocation, you MUST:</p>
+            <ul>
+              <li>
+                <div className={styles.listNo}>
+                  <span>1</span>
+                </div>
+                <span className={styles.listBody}>be a Kenyan citizen</span>
+              </li>
+              <li>
+                <div className={styles.listNo}>
+                  <span>2</span>
+                </div>
+
+                <span className={styles.listBody}>be over 18 years of age</span>
+              </li>
+              <li>
+                <div className={styles.listNo}>
+                  <span>3</span>
+                </div>
+                <span className={styles.listBody}>
+                  have a valid national identity card
+                </span>
+              </li>
+            </ul>
+
             <p>
               You must then complete your profile by submitting your personal
               details, housing preferences (the type of house you are applying
@@ -68,66 +85,77 @@ function Main() {
               government stakeholders for authenticity
             </p>
             <div className={styles.bannerButton}>
-              <a href="/Register">Get Started, its free</a>
+              <a href="/Register">Register Now, its free</a>
             </div>
           </div>
         </div>
         <div className={styles.step}>
           <div className={styles.stepTitle}>
-            <span>2</span>
+            <div>
+              <span>2</span>
+            </div>
           </div>
           <div className={styles.stepBody}>
-            <FontAwesomeIcon icon={faMoneyBillAlt} />
-            <p>Contribute</p>
+            <div className={styles.title}>
+              <FontAwesomeIcon icon={faMoneyBillAlt} className={styles.icon} />
+              <h4>Contribute</h4>
+            </div>
             <p>
               Upon registration, you are allocated a unique identification
               number which you will use to make your monthly contribution to the
               Housing Fund
             </p>
             <p>The following contribution schemes are supported:</p>
-            <div>
-              <div>
-                <span>1</span>
-                <div>
+            <ul className={styles.stepItem}>
+              <li>
+                <div className={styles.listNo}>
+                  <span>1</span>
+                </div>
+                <div className={styles.listBody}>
                   <h4>Statutory Contributor</h4>
                   <ul>
                     <li>
-                      Mandatory contributions are capped at KES 2,500 per month
-                      per employee and employer
+                      &#8728; Mandatory contributions are capped at KES 2,500
+                      per month per employee and employer
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div>
-                <span>2</span>
-                <div>
+              </li>
+              <li>
+                <div className={styles.listNo}>
+                  <span>2</span>
+                </div>
+                <div className={styles.listBody}>
                   <h4>Voluntary Contributor</h4>
                   <ul>
-                    <li>Monthly contributions are not capped</li>
+                    <li>&#8728; Monthly contributions are not capped</li>
                     <li>
-                      Voluntary contributions will not be taxed at time of
-                      withdrawal
+                      &#8728; Voluntary contributions will not be taxed at time
+                      of withdrawal
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div>
-                <span>3</span>
-                <div>
+              </li>
+              <li>
+                <div className={styles.listNo}>
+                  <span>3</span>
+                </div>
+                <div className={styles.listBody}>
                   <h4>Joint Contributor</h4>
                   <ul>
                     <li>
-                      Spousal or joint contribution can be made towards
+                      &#8728; Spousal or joint contribution can be made towards
                       ownership of one house at a time
                     </li>
                     <li>
-                      There is also an option to apply for one individually
+                      &#8728; There is also an option to apply for one
+                      individually
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-            <p>
+              </li>
+            </ul>
+            <p className={styles.contFooter}>
               Contributions to the Housing Fund can be accessed on the sooner of
               15 years after a member’s first contribution or the attainment of
               retirement age
@@ -136,33 +164,40 @@ function Main() {
         </div>
         <div className={styles.step}>
           <div className={styles.stepTitle}>
-            <span>3</span>
+            <div>
+              <span>3</span>
+            </div>
           </div>
           <div className={styles.stepBody}>
-            <FontAwesomeIcon icon={faHome} />
-            <p>Own</p>
-            <p>To register for house allocation, you MUST:</p>
-            <p>
-              Allocation of houses to qualified applicants would start as soon
-              as the construction of the affordable houses begins. The
-              (allocation) process for the available houses would be done in a
-              regular, fair and transparent system free of any human
-              intervention and contact.
-            </p>
-            <p>
-              The initial eligibility for allocation will depend on several
-              factors such as when you registered, family status as well as
-              demand across the housing categories.
-            </p>
-            <p>
-              Those who do not get an allocation in the initial allocation are
-              then put on a waiting list to ensure that they get priority in
-              subsequent allocations.
-            </p>
+            <div className={styles.title}>
+              <FontAwesomeIcon icon={faHome} className={styles.icon} />
+              <h4>Own</h4>
+            </div>
+            <div className={styles.houseOwn}>
+              <p>
+                Allocation of houses to qualified applicants would start as soon
+                as the construction of the affordable houses begins. The
+                (allocation) process for the available houses would be done in a
+                regular, fair and transparent system free of any human
+                intervention and contact.
+              </p>
+              <p>
+                The initial eligibility for allocation will depend on several
+                factors such as when you registered, family status as well as
+                demand across the housing categories.
+              </p>
+              <p>
+                Those who do not get an allocation in the initial allocation are
+                then put on a waiting list to ensure that they get priority in
+                subsequent allocations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section className={styles.mainBottom}></section>
+      <section className={styles.mainBottom}>
+        <div className={styles.how}>How Does it works?</div>
+      </section>
     </>
   );
 }
