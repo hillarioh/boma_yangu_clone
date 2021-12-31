@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./banner.module.scss";
+import Link from "next/link";
 
 function Banner() {
   return (
@@ -19,7 +20,9 @@ function Banner() {
           <br /> ownership goals
         </p>
         <div className={styles.bannerButton}>
-          <a href="/Register">Get Started, its free</a>
+          <Link href="/Register">
+            <a>Get Started, its free</a>
+          </Link>
         </div>
       </div>
     </div>

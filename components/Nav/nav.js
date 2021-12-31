@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./nav.module.scss";
 import logoPic from "../../assets/images/boma_logo.svg";
+import Link from "next/link";
 
 function Nav() {
   return (
@@ -19,37 +20,59 @@ function Nav() {
 
         <ul className={styles.navLinks}>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="/News">News</a>
+            <Link href="/News">
+              <a>News</a>
+            </Link>
           </li>
           <li>
-            <a href="/Ahp">AHP</a>
+            <Link href="/Ahp">
+              <a>AHP</a>
+            </Link>
           </li>
           <li>
-            <a href="/Pipeline">PIPELINE</a>
+            <Link href="/Pipeline">
+              <a>PIPELINE</a>
+            </Link>
           </li>
           <li>
-            <a href="/Tenders">TENDERS</a>
+            <Link href="/Tenders">
+              <a>TENDERS</a>
+            </Link>
           </li>
           <li>
-            <a href="/Housing_projects">HOUSING PROJECTS</a>
+            <Link href="/Housing_projects">
+              <a>HOUSING PROJECTS</a>
+            </Link>
           </li>
           <li>
-            <a href="/Faqs">FAQS</a>
+            <Link href="/Faqs">
+              <a>FAQS</a>
+            </Link>
           </li>
           <li>
-            <a href="/Contact">CONTACT</a>
+            <Link href="/Contact">
+              <a>CONTACT</a>
+            </Link>
           </li>
           <li>
-            <a href="/Strategic_partners">STRATEGIC PARTNERS</a>
+            <Link href="/Strategic_partners">
+              <a>STRATEGIC PARTNERS</a>
+            </Link>
           </li>
           <li>
-            <a href="/Register">REGISTER</a>
+            <Link href="/Register">
+              <a>REGISTER</a>
+            </Link>
           </li>
           <li>
-            <a href="/Login">LOGIN</a>
+            <Link href="/Login">
+              <a>LOGIN</a>
+            </Link>
           </li>
         </ul>
       </div>

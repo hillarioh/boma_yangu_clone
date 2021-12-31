@@ -1,0 +1,26 @@
+.project {
+  display: flex;
+
+  .projectImage {
+    flex: 1;
+  }
+
+  .projectContent {
+    flex: 2;
+    padding: 1rem;
+  }
+
+  .button {
+    padding: 1rem 0;
+    margin: 1rem;
+    a {
+      background-color: #006600;
+      border-color: #006611;
+      color: #fff;
+      border-radius: 3px;
+      box-shadow: none;
+      padding: 9px 30px;
+      font-size: 16px;
+    }
+  }
+}

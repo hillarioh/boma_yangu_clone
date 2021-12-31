@@ -153,4 +153,21 @@
     font-family: "RalewaySemiBold";
     font-size: 45px;
   }
+  .bottom {
+    padding: 3rem 5rem;
+    h2 {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+  .projects {
+    display: flex;
+    ul {
+      flex: 3;
+      list-style: none;
+    }
+    .projectContent {
+      flex: 9;
+    }
+  }
 }

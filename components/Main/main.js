@@ -6,6 +6,8 @@ import {
   faMoneyBillAlt,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import Project from "../templateComponents/project/Type1/ProjectType1";
 
 function Main() {
   return (
@@ -17,7 +19,9 @@ function Main() {
             <br /> partners is now open
           </p>
           <div className={styles.button}>
-            <a href="/Register">Apply Now</a>
+            <Link href="/Register">
+              <a>Apply Now</a>
+            </Link>
           </div>
           <p className={styles.did}>
             Did you know that you can verify contributions made to Boma Yangu
@@ -30,7 +34,9 @@ function Main() {
             private affordable project.
           </p>
           <div className={styles.bannerButton}>
-            <a href="/Register">Download Project Progress Update</a>
+            <Link href="/Register">
+              <a>Download Project Progress Update</a>
+            </Link>
           </div>
         </div>
       </section>
@@ -197,6 +203,36 @@ function Main() {
       </section>
       <section className={styles.mainBottom}>
         <div className={styles.how}>How Does it works?</div>
+        <div className={styles.bottom}>
+          <h2>Upcoming Projects</h2>
+          <div className={styles.projects}>
+            <ul>
+              <li>
+                <Link href="/">
+                  <a>AHP Projects</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Government & Institutional Housing</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Slum Upgrading</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Private Affordable Projects</a>
+                </Link>
+              </li>
+            </ul>
+            <div className={styles.projectContent}>
+              <Project />
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
